@@ -44,5 +44,5 @@ instance.setProvider(provider);
   };
 
   //getBalance("0x8b2273135C22bCf12dC477bF610617C218da3b78");
-  //getToken("0xcFA783BE594cbB82f66b001BFeA08bEb36fcca38",1000);
+  //getToken("",1000);
   //sendToken("0xcFA783BE594cbB82f66b001BFeA08bEb36fcca38","0x8b2273135C22bCf12dC477bF610617C218da3b78",10);
