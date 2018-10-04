@@ -3,33 +3,36 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Token Coin V1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-    <div>
-        <label for="balance">Balance:</label>
-        <input id="getbalAddress" type="text" value="" size="40" /> 
-        <button id="btn1">OK</button>
-    </div>
 
-    <div>
-        <label for="getToken">Receive Token:</label>
-        <input id="getAddress" type="text" value="" size="40" />
-        <label for="getToken">Value:</label> 
-        <input id="getValue" type="text" value="" size="10" /> 
-        <button id="btn2">OK</button>
-    </div>
+    
+        <div>
+            <label for="balance">Balance:</label>
+            <input id="getbalAddress" type="text" value="" size="40" /> 
+            <button id="btn1">OK</button>
+        </div>
 
-    <div>
-        <label for="sendToken">Send Token:</label>
-        <input id="sendAddress1" type="text" value="" size="40" /> 
-        <input id="sendAddress2" type="text" value="" size="40" />
-        <label for="getToken">Value:</label>  
-        <input id="sendValue" type="text" value="" size="10" /> 
-        <button id="btn3">OK</button>
-    </div>
+        <div>
+            <label for="getToken">Receive Token:</label>
+            <input id="getAddress" type="text" value="" size="40" />
+            <label for="getToken">Value:</label> 
+            <input id="getValue" type="text" value="" size="10" /> 
+            <button id="btn2">OK</button>
+        </div>
+
+        <div>
+            <label for="sendToken">Send Token:</label>
+            <input id="sendAddress1" type="text" value="" size="40" /> 
+            <input id="sendAddress2" type="text" value="" size="40" />
+            <label for="getToken">Value:</label>  
+            <input id="sendValue" type="text" value="" size="10" /> 
+            <button id="btn3">OK</button>
+        </div>
+    
 
     <script src = "bundle.js" > </script>
 
@@ -49,11 +52,11 @@
         });
 
         var btn3 = document.getElementById("btn3");
-        btn2.addEventListener('click', function (){
+        btn3.addEventListener('click', function (){
             var address1 = document.getElementById('sendAddress1').value;
             var address2 = document.getElementById('sendAddress2').value;
             var value = document.getElementById('sendValue').value;
-            sendToken(address,value1,value2);
+            sendToken(address1,address2,value);
         });
 
     </script>

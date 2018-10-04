@@ -33,13 +33,13 @@ instance.setProvider(provider);
   };
 
   sendToken = async function send(address1, address2, value) {
-      accounts = await web3.eth.getAccounts();
-      await instance.methods.transferFrom(address1+'',address2+'',value).send({
-        from: accounts[0],
-        gas: '1000000'
-      });
-      alert('Valor Enviado!');
-  };
+    accounts = await web3.eth.getAccounts();
+    await instance.methods.transferFrom(address1+'',address2+'',value).send({
+      from: accounts[0],
+      gas: '1000000'
+    });
+    alert('Valor Enviado!');
+};
 
 },{"truffle-hdwallet-provider":234,"web3":355}],2:[function(require,module,exports){
 module.exports = require('./register')().Promise
